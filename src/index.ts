@@ -1,6 +1,8 @@
 import { AddressInfo } from 'net'
-const app = require("./server") 
+import app from './server'
+import { donationRouter } from './routes/donationRoute'
 
+app.use("/donation", donationRouter)
 
 const server = app.listen(3003, () => {
     if(server) {

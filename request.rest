@@ -1,1 +1,18 @@
-GET http://localhost:3003/
+
+POST http://localhost:3003/donation 
+Content-Type: application/json
+
+{
+    "name": "",
+    "email": "",
+    "phoneNumber": "", 
+    "cep": "", 
+    "city": "", 
+    "state": "", 
+    "streetAddress": "",
+    "number": "",
+    "complement": "",
+    "neighborhood": "",
+    "deviceCount": "", 
+    "devices": []
+}
